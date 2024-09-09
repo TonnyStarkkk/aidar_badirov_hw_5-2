@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">aidar_badirov_hw_5-2</string>
+    <string name="fname">First Name</string>
+    <string name="sname">Second Name</string>
+    <string name="you">You</string>
+    <string name="me">Me</string>
+    <string name="love_calc">Love Calculator</string>
+    <string name="calc">Calculate</string>
+    <string name="home">Home</string>
+    <string name="history">History</string>
+    <string name="score">Your Score</string>
+    <string name="try_again">Try Again</string>
+    <string name="procent">0%</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
