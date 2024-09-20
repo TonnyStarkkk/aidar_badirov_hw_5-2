@@ -1,4 +1,4 @@
-package com.example.aidar_badirov_hw_5_2
+package com.example.aidar_badirov_hw_5_2.data.network
 
 import retrofit2.Call
 import retrofit2.http.GET
@@ -13,5 +13,5 @@ interface LoveApiService {
         @Header("X-Rapidapi-Host") host: String,
         @Query("fname") firstName: String,
         @Query("sname") secondName: String
-    ): Call<LoveModel>
+    ): Call<LoveResult>
 }
