@@ -1,10 +1,11 @@
-package com.example.aidar_badirov_hw_5_2.ui.fragments
+package com.example.aidar_badirov_hw_5_2.ui.fragments.love
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.aidar_badirov_hw_5_2.R
 import com.example.aidar_badirov_hw_5_2.databinding.FragmentResultBinding
 
@@ -29,17 +30,18 @@ class ResultFragment : Fragment() {
     private fun fillData() = with(binding) {
         val firstName = arguments?.getString("firstName")
         val secondName = arguments?.getString("secondName")
-        val percentage = arguments?.getString("percentage")
+        val percentage = arguments?.getInt("percentage")
 
         tvYouResult.text = firstName
         tvMeResult.text = secondName
         tvProcent.text = "$percentage%"
 
         btnTryAgain.setOnClickListener {
-            val loveCalculatorFragment = LoveCalculatorFragment()
-            parentFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, loveCalculatorFragment).addToBackStack(null)
-                .commit()
+            findNavController().navigateUp()
+        }
+
+        historyImg.setOnClickListener {
+            findNavController().navigate(R.id.action_resultFragment_to_historyFragment)
         }
     }
 }

@@ -11,6 +11,7 @@
     <string name="score">Your Score</string>
     <string name="try_again">Try Again</string>
     <string name="procent">0%</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="it_s_funs_and_many_more">It`s funs and many more</string>
+    <string name="get_started">Get Started</string>
 </resources>
