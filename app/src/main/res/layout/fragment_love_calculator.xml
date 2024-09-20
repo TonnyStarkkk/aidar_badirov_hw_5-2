@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.fragments.LoveCalculatorFragment">
+    tools:context=".ui.fragments.love.LoveCalculatorFragment">
 
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="10dp"
+        android:background="@drawable/bordered_background"
         android:padding="16dp"
-        app:cardCornerRadius="16dp"
-        android:background="@drawable/bordered_background">
+        app:cardCornerRadius="16dp">
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -28,7 +28,7 @@
                     android:id="@+id/iv_big_heart"
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
-                    android:src="@drawable/item_heart"/>
+                    android:src="@drawable/item_heart" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -37,7 +37,7 @@
                     android:text="@string/love_calc"
                     android:textColor="@color/blue_isn"
                     android:textSize="30sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -53,7 +53,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:layout_marginBottom="8dp"
-                        android:text="@string/fname"/>
+                        android:text="@string/fname" />
 
                     <EditText
                         android:id="@+id/et_fname"
@@ -63,7 +63,7 @@
                         android:layout_marginBottom="16dp"
                         android:background="@drawable/rounded_et"
                         android:hint="@string/you"
-                        android:padding="6dp"/>
+                        android:padding="5dp" />
 
                     <TextView
                         android:id="@+id/tv_sname"
@@ -71,7 +71,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:layout_marginBottom="8dp"
-                        android:text="@string/sname"/>
+                        android:text="@string/sname" />
 
                     <EditText
                         android:id="@+id/et_sname"
@@ -81,7 +81,7 @@
                         android:layout_marginBottom="16dp"
                         android:background="@drawable/rounded_et"
                         android:hint="@string/me"
-                        android:padding="6dp"/>
+                        android:padding="5dp" />
                 </LinearLayout>
 
                 <Button
@@ -92,9 +92,25 @@
                     android:layout_margin="20dp"
                     android:backgroundTint="@color/blue_isn"
                     android:paddingHorizontal="50dp"
-                    android:text="@string/calc"/>
+                    android:text="@string/calc" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/history"
+                    android:textSize="20sp"
+                    android:paddingVertical="10dp"
+                    android:id="@+id/btn_history"/>
 
             </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
 
         </FrameLayout>
     </androidx.cardview.widget.CardView>
